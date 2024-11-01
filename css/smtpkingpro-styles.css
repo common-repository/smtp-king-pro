@@ -1,0 +1,182 @@
+/***** Settings Area Styling *****/
+
+.smtpkp_tabs {
+    margin-top: -20px;
+}
+
+.smtpkp_tabs a {
+    padding: 0 15px;
+    font-size: 18px;
+    height: 32px;
+    line-height: 32px;
+    display: inline-block;
+    border: 1px solid #aaa;
+    border-top: none;
+    background: #ccc;
+    color: #666;
+    margin-right: 2px;
+    position: relative;
+    cursor: pointer;
+    font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+}
+
+.smtpkp_tabs a.active, .smtpkp_tabs a:hover {
+    top: -1px;
+    background: #efefef;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.wrap div.error.smtpkp_notice, .wrap div.updated.smtpkp_notice {
+    margin: 25px 0 5px;
+}
+
+.smtpkp_sections div.smtpkp_section {
+    width: 0%;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+}
+
+.smtpkp_sections div.smtpkp_section.active {
+    width: 90%;
+    height: auto;
+    opacity: 1;
+    padding: 20px 0;
+}
+
+.smtpkp_sections .form-table tr:nth-child(even) {
+    background: #eee;
+}
+
+.smtpkp_sections .button-primary {margin: 20px 0;}
+
+/***** KPP Page *****/
+
+.kpp_block.filled {
+    padding:20px;
+    border: 1px solid #ccc;
+    background: #efefef;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    margin: 20px 0;
+}
+
+.kpp_plugin, .kpp_item {
+    border: 1px solid #ccc;
+    background: #efefef;
+    width: 285px;
+    margin: 0 20px 20px 0;
+    text-align: center;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    overflow: hidden;
+    float: left;
+    padding-bottom: 20px;
+    opacity: 0.9;
+    -webkit-transition: box-shadow 0.5s ease, background 0.5s ease, border 0.5s ease, opacity 0.5s ease;
+    -moz-transition: box-shadow 0.5s ease, background 0.5s ease, border 0.5s ease, opacity 0.5s ease;
+    -ms-transition: box-shadow 0.5s ease, background 0.5s ease, border 0.5s ease, opacity 0.5s ease;
+    -o-transition: box-shadow 0.5s ease, background 0.5s ease, border 0.5s ease, opacity 0.5s ease;
+    transition: box-shadow 0.5s ease, background 0.5s ease, border 0.5s ease, opacity 0.5s ease;
+}
+
+.kpp_plugin:hover, .kpp_item:hover {
+    box-shadow: 0 0 18px -5px #333;
+    border: 1px solid #999;
+    opacity: 1;
+}
+
+.kpp_plugin img, .kpp_item img {width: 100%;}
+
+.kpp_plugin .title, .kpp_item .title {
+    font-size: 20px;
+    display: block;
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+.kpp_plugin .description, .kpp_item .description {
+    display: block;
+    padding: 10px 20px;
+}
+
+.kpp_plugin .links a, .kpp_item .links a {
+    display: inline-block;
+    padding: 0 30px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #ccc;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #999;
+    color: #eee;
+    text-decoration: none;
+    font-size: 16px;
+    -webkit-transition: box-shadow 0.5s ease, background 0.5s ease, border 0.5s ease;
+    -moz-transition: box-shadow 0.5s ease, background 0.5s ease, border 0.5s ease;
+    -ms-transition: box-shadow 0.5s ease, background 0.5s ease, border 0.5s ease;
+    -o-transition: box-shadow 0.5s ease, background 0.5s ease, border 0.5s ease;
+    transition: box-shadow 0.5s ease, background 0.5s ease, border 0.5s ease;
+}
+
+.kpp_plugin:hover .links a, .kpp_item:hover .links a {border: 1px solid #666;}
+.kpp_plugin .links a:hover, .kpp_item .links a:hover {background: #3883A5; box-shadow: 0 0 18px -5px #333;}
+
+#kpp_social {display: block; overflow: hidden;}
+
+#kpp_social .kpp_social {
+    width: 285px; 
+    height: 40px; 
+    line-height: 40px;
+    text-align: center;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    float: left;
+    margin: 0 20px 20px 0;
+    font-size: 20px;
+}
+
+#kpp_social .kpp_social.facebook {background: #46629E;}
+#kpp_social .kpp_social.twitter {background: #27B6F2;}
+#kpp_social .kpp_social.google {background: #CE352C;}
+
+
+#kpp_social .kpp_social a {display: block; width: 100%; height: 100%; color: #fff; text-decoration: none; font-weight: bold;}
+
+#kpp_social .kpp_social a span.kpp_width {
+    width: 0px;
+    display: inline-block;
+    -webkit-transition: width 0.5s ease;
+    -moz-transition: width 0.5s ease;
+    -ms-transition: width 0.5s ease;
+    -o-transition: width 0.5s ease;
+    transition: width 0.5s ease;
+}
+
+#kpp_social .kpp_social a:hover span.kpp_width {
+    width: 90px;
+}
+
+#kpp_social .kpp_social a span.kpp_opacity {
+    opacity: 0;
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    transition-delay: 1s;
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+}
+
+#kpp_social .kpp_social a:hover span.kpp_opacity {
+    opacity: 1;
+}
